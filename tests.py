@@ -26,7 +26,7 @@ class PartyTests(unittest.TestCase):
 
         result = self.client.get('/')
         self.assertIn('Please RSVP', result.data)
-        # print 'this works 2'
+        print 'this works 2'
 
     def test_rsvp(self):
         """Do RSVPed users see the correct view?"""
